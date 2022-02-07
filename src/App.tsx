@@ -43,7 +43,7 @@ printName("mohammad");
 printFamily("mohseni");
 printAge(22);
 
-function App() {
+const App:React.FC = () => {
   return (
     <div>
       <div className="d-flex justify-content-center">
