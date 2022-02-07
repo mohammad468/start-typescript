@@ -10,11 +10,14 @@ const App: React.FC = () => {
   const [todo, setTodo] = useState<string>("");
   const [todos, setTodos] = useState<Todo[]>([]);
 
-  const handleAdd = (event) => {
+  const handleAdd = (event: React.FormEvent) => {
     event.preventDefault();
-  }
 
-  console.log(todo);
+    setTodos([...todos, { id: Date.now(), todo: todo, isDone: false }]);
+    setTodo("");
+  };
+
+  console.log(todos);
 
   return (
     <div>
@@ -22,7 +25,7 @@ const App: React.FC = () => {
         <h1>HelloWorld</h1>
       </div>
       <div className="d-flex justify-content-center">
-        <InputField todo={todo} setTodo={setTodo} />
+        <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { Button, Col, Form } from "react-bootstrap";
 interface Props {
   todo: string;
   setTodo: React.Dispatch<React.SetStateAction<string>>;
-  handleAdd: () => void;
+  handleAdd: (event: React.FormEvent) => void;
 }
 
 const InputField: React.FC<Props> = ({ todo, setTodo, handleAdd }) => {
