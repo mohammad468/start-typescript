@@ -5,9 +5,8 @@ import "./App.scss";
 // ?components
 import InputField from "./components/InputField";
 
-const App:React.FC = () => {
-
-  const [todo, setTodo] = useState<string>();
+const App: React.FC = () => {
+  const [todo, setTodo] = useState<string | number>();
 
   return (
     <div>
@@ -17,11 +16,9 @@ const App:React.FC = () => {
       <div className="d-flex justify-content-center">
         <InputField />
       </div>
-      <div className="d-flex justify-content-center">
-        
-      </div>
+      <div className="d-flex justify-content-center"></div>
     </div>
   );
-}
+};
 
 export default App;
