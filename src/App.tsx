@@ -10,6 +10,10 @@ const App: React.FC = () => {
   const [todo, setTodo] = useState<string>("");
   const [todos, setTodos] = useState<Todo[]>([]);
 
+  const handleAdd = (event) => {
+    event.preventDefault();
+  }
+
   console.log(todo);
 
   return (
