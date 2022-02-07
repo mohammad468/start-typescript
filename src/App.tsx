@@ -8,6 +8,8 @@ import InputField from "./components/InputField";
 const App: React.FC = () => {
   const [todo, setTodo] = useState<string>("");
 
+  console.log(todo);
+
   return (
     <div>
       <div className="d-flex justify-content-center">
