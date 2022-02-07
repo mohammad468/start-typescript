@@ -20,7 +20,6 @@ const App: React.FC = () => {
       <div className="d-flex justify-content-center">
         <InputField todo={todo} setTodo={setTodo} />
       </div>
-      <div className="d-flex justify-content-center"></div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Form } from "react-bootstrap";
+import { Button, Col, Form } from "react-bootstrap";
 
 interface Props {
   todo: string;
@@ -19,6 +19,9 @@ const InputField: React.FC<Props> = ({ todo, setTodo }) => {
             placeholder="Search"
           />
         </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
       </Form>
     </Col>
   );
