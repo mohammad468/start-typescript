@@ -1,12 +1,16 @@
 import React from "react";
 import "./App.scss";
-import MyComponents from "./MyComponents";
+import MyComponents from "./components/MyComponents";
 
 function App() {
   return (
     <div>
-      <h1>HelloWorld</h1>
-      <MyComponents />
+      <div className="d-flex justify-content-center">
+        <h1>HelloWorld</h1>
+      </div>
+      <div className="d-flex justify-content-center">
+        <MyComponents />
+      </div>
     </div>
   );
 }
