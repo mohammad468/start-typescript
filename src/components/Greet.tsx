@@ -1,13 +1,31 @@
-import React from 'react';
+import React from "react";
+import GreetList from "./GreetList";
 
 interface myProps {
-    name: string;
-    family: string;
-    age: number;
-    id:number;
+  name: string;
+  family: string;
+  age: number;
+  id: number;
 }
 
 function Greet(props: myProps) {
+  const myStudents = [
+    {
+      id: 1,
+      name: "mohammad",
+      family: "mohseni",
+      age: 22,
+      score: 20,
+    },
+    {
+      id: 2,
+      name: "ali",
+      family: "shisheh",
+      age: 21,
+      score: 10,
+    },
+  ];
+
   return (
     <div>
       <div className="">
@@ -16,6 +34,17 @@ function Greet(props: myProps) {
         <h2>{props.age}</h2>
         <p>{props.id}</p>
       </div>
+      {myStudents.map((response) => (
+        <div key={response.id}>
+          <GreetList
+            id={response.id}
+            name={response.name}
+            family={response.family}
+            age={response.age}
+            score={response.score}
+          />
+        </div>
+      ))}
     </div>
   );
 }
