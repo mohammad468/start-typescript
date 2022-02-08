@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Badge } from "react-bootstrap";
 import "./App.scss";
 
 // ?components
 import InputField from "./components/InputField";
+import TodoList from "./components/TodoList";
 import { Todo } from "./model";
 
 const App: React.FC = () => {
@@ -21,11 +21,14 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center my-2">
         <h1>HelloWorld</h1>
       </div>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center my-2">
         <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
+      </div>
+      <div className="d-flex justify-content-center my-2">
+        <TodoList setTodos={setTodos} todos={todos} />
       </div>
     </div>
   );
