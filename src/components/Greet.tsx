@@ -1,14 +1,20 @@
-import React from "react";
+import React from 'react';
 
-interface GreetProps {
-  name: string;
+interface myProps {
+    name: string;
+    family: string;
+    age: number;
+    id:number;
 }
 
-function Greet(props: GreetProps) {
+function Greet(props: myProps) {
   return (
     <div>
-      <div className="d-flex justify-content-center my-2">
+      <div className="">
         <h1>{props.name}</h1>
+        <h1>{props.family}</h1>
+        <h2>{props.age}</h2>
+        <p>{props.id}</p>
       </div>
     </div>
   );
