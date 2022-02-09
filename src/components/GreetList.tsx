@@ -1,5 +1,6 @@
 import React from "react";
 import { Badge } from "react-bootstrap";
+import Status from "./Status";
 
 interface myListProps {
   students: {
@@ -27,6 +28,9 @@ function GreetList(props: myListProps) {
           </h2>
         </div>
       ))}
+      <div className="d-flex justify-content-center">
+        <Status status="success" />
+      </div>
     </div>
   );
 }
