@@ -24,6 +24,13 @@ function Greet(props: myProps) {
       age: 21,
       score: 10,
     },
+    {
+      id: 2,
+      name: "hossein",
+      family: "sabzeali",
+      age: 18,
+      score: 12,
+    },
   ];
 
   return (
@@ -34,17 +41,7 @@ function Greet(props: myProps) {
         <h2>{props.age}</h2>
         <p>{props.id}</p>
       </div>
-      {myStudents.map((response) => (
-        <div key={response.id}>
-          <GreetList
-            id={response.id}
-            name={response.name}
-            family={response.family}
-            age={response.age}
-            score={response.score}
-          />
-        </div>
-      ))}
+      <GreetList students={myStudents} />
     </div>
   );
 }
