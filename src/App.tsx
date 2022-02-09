@@ -28,8 +28,8 @@ const App: React.FC = () => {
       </div>
       <div className="d-flex justify-content-center my-2">
         <ButtonComponent
-          clickHandler={() => {
-            console.log("button clicked");
+          clickHandler={(event, id) => {
+            console.log("button clicked", event, id);
           }}
         />
       </div>
