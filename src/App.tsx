@@ -4,6 +4,7 @@ import ButtonComponent from "./components/ButtonComponent";
 
 // ?components
 import Greet from "./components/Greet";
+import InputComponent from "./components/InputComponent";
 
 const App: React.FC = () => {
   const myData = {
@@ -27,6 +28,10 @@ const App: React.FC = () => {
         />
       </div>
       <div className="d-flex justify-content-center my-2">
+        <InputComponent
+          value=""
+          changeHandler={(event) => console.log(event)}
+        />
         <ButtonComponent
           clickHandler={(event, id) => {
             console.log("button clicked", event, id);
