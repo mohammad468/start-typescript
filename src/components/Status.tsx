@@ -2,7 +2,7 @@ import React from "react";
 import { Badge } from "react-bootstrap";
 
 interface StatusProps {
-  status: string;
+  status: "loading" | "error" | "success";
 }
 
 const Status = (props: StatusProps) => {
