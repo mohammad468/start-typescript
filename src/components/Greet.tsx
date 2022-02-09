@@ -25,7 +25,7 @@ function Greet(props: myProps) {
       score: 10,
     },
     {
-      id: 2,
+      id: 3,
       name: "hossein",
       family: "sabzeali",
       age: 18,

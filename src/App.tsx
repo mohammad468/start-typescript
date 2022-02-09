@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.scss";
+import ButtonComponent from "./components/ButtonComponent";
 
 // ?components
 import Greet from "./components/Greet";
@@ -23,6 +24,13 @@ const App: React.FC = () => {
           family={myData.family}
           age={myData.age}
           id={myData.id}
+        />
+      </div>
+      <div className="d-flex justify-content-center my-2">
+        <ButtonComponent
+          clickHandler={() => {
+            console.log("button clicked");
+          }}
         />
       </div>
     </div>
