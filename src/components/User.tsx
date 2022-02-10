@@ -15,7 +15,7 @@ const User = () => {
   if (user === null) {
     myUserName = "user name is null";
   } else {
-    myUserName = `hello ${user.name}`;
+    myUserName = `hello ${user.name} ${user.family}`;
   }
   if (user === null) {
     myUserNameStyle = "danger";
