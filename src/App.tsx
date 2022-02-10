@@ -5,6 +5,7 @@ import ButtonComponent from "./components/ButtonComponent";
 // ?components
 import Greet from "./components/Greet";
 import InputComponent from "./components/InputComponent";
+import LoggedIn from "./components/LoggedIn";
 
 const App: React.FC = () => {
   const myData = {
@@ -38,6 +39,7 @@ const App: React.FC = () => {
           }}
         />
       </div>
+      <LoggedIn/>
     </div>
   );
 };
