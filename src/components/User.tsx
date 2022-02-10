@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Badge, Button } from "react-bootstrap";
 
 interface authUser {
