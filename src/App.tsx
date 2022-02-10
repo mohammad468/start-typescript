@@ -6,6 +6,7 @@ import ButtonComponent from "./components/ButtonComponent";
 import Greet from "./components/Greet";
 import InputComponent from "./components/InputComponent";
 import LoggedIn from "./components/LoggedIn";
+import User from "./components/User";
 
 const App: React.FC = () => {
   const myData = {
@@ -39,7 +40,8 @@ const App: React.FC = () => {
           }}
         />
       </div>
-      <LoggedIn/>
+      <LoggedIn />
+      <User />
     </div>
   );
 };
